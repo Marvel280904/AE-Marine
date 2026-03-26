@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import OverviewSection from "../components/about/OverviewSection";
+import WhySection from "../components/about/WhySection";
 
 export default function AboutPage() {
   return (
@@ -22,11 +24,11 @@ export default function AboutPage() {
         />
 
         {/* Dark Overlay */}
-        <div 
+        <div
           className="absolute inset-0 z-[1]"
           style={{
             background: "linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%)"
-          }} 
+          }}
         />
 
         {/* Content */}
@@ -40,7 +42,7 @@ export default function AboutPage() {
             >
               About AE Marine.
             </motion.h1>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -53,6 +55,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <OverviewSection />
+      <WhySection />
 
       {/* Future sections (Team, History, etc.) */}
     </main>
