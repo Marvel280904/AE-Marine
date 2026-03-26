@@ -2,29 +2,53 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Header() {
   const [active, setActive] = useState("Home");
   const [isOpen, setIsOpen] = useState(false);
+  const [scrollState, setScrollState] = useState<"top" | "hidden" | "visible">("top");
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentY = window.scrollY;
+      if (currentY <= 10) {
+        setScrollState("top");
+      } else if (currentY > lastScrollY.current) {
+        // Scrolling down
+        setScrollState("hidden");
+      } else {
+        // Scrolling up
+        setScrollState("visible");
+      }
+      lastScrollY.current = currentY;
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
     <motion.header
       initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      className="absolute top-0 left-0 right-0 z-50 w-full"
+      animate={{ 
+        y: scrollState === "hidden" ? -100 : 0,
+        backgroundColor: scrollState === "visible" ? "rgb(0, 115, 133)" : "transparent",
+      }}
+      transition={{ duration: 0.4, ease: "easeInOut" }}
+      className="fixed top-0 left-0 right-0 z-50 w-full"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-16 flex items-center justify-between h-20 md:h-24">
         {/* Logo */}
