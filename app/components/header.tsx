@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Menu, X } from "lucide-react";
 
@@ -14,10 +15,16 @@ const navLinks = [
 ];
 
 export default function Header() {
-  const [active, setActive] = useState("Home");
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [scrollState, setScrollState] = useState<"top" | "hidden" | "visible">("top");
   const lastScrollY = useRef(0);
+
+  const isActive = (href: string) => {
+    if (href === "/" && pathname === "/") return true;
+    if (href !== "/" && pathname === href) return true;
+    return false;
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,17 +76,16 @@ export default function Header() {
             <Link
               key={link.label}
               href={link.href}
-              onClick={() => setActive(link.label)}
               className="relative flex items-center gap-2 text-base font-medium text-white transition-colors hover:text-white"
             >
               <div className="flex items-center gap-2">
-                {active === link.label && (
+                {isActive(link.href) && (
                   <motion.span
                     layoutId="active-dot"
                     className="w-1.5 h-1.5 rounded-full bg-white"
                   />
                 )}
-                <span className={active === link.label ? "text-white" : "text-white/70"}>
+                <span className={isActive(link.href) ? "text-white" : "text-white/70"}>
                   {link.label}
                 </span>
               </div>
@@ -89,7 +95,7 @@ export default function Header() {
 
         {/* Desktop Get in Touch button */}
         <Link
-          href="#contact"
+          href="/contact"
           className="hidden lg:flex group"
         >
           <div className="flex items-center p-1 bg-white rounded-[2px] overflow-hidden transition-all duration-300">
@@ -136,12 +142,11 @@ export default function Header() {
                   <Link
                     href={link.href}
                     onClick={() => {
-                      setActive(link.label);
                       setIsOpen(false);
                     }}
                     className="text-xl font-medium text-white/90 hover:text-white flex items-center gap-3"
                   >
-                    {active === link.label && <div className="w-1.5 h-1.5 rounded-full bg-white" />}
+                    {isActive(link.href) && <div className="w-1.5 h-1.5 rounded-full bg-white" />}
                     {link.label}
                   </Link>
                 </motion.div>
@@ -154,7 +159,7 @@ export default function Header() {
                 className="pt-4"
               >
                 <Link
-                  href="#contact"
+                  href="/contact"
                   onClick={() => setIsOpen(false)}
                   className="flex items-center p-1 justify-between bg-white rounded-[2px] overflow-hidden"
                 >

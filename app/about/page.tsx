@@ -16,7 +16,7 @@ export default function AboutPage() {
           transition={{ duration: 1.5, ease: "easeOut" }}
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: "url('/images/about-bg.jpeg')",
+            backgroundImage: "url('/images/about-bg.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",

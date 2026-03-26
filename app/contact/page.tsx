@@ -23,7 +23,7 @@ export default function ContactPage() {
           transition={{ duration: 1.5, ease: "easeOut" }}
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: "url('/images/contact-bg.jpeg')",
+            backgroundImage: "url('/images/contact-bg.png')",
             backgroundSize: "cover",
             backgroundPosition: "50% 70%",
             backgroundRepeat: "no-repeat",

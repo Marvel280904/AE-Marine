@@ -11,16 +11,16 @@ const row1 = [
   "/logo/logo4.png",
   "/logo/logo5.png",
   "/logo/logo6.png",
-  "/logo/logo7.jpeg",
+  "/logo/logo7.png",
 ];
 
 const row2 = [
   "/logo/logo8.png",
   "/logo/logo9.png",
-  "/logo/logo10.jpeg",
-  "/logo/logo11.jpeg",
-  "/logo/logo12.jpeg",
-  "/logo/logo13.jpeg",
+  "/logo/logo10.png",
+  "/logo/logo11.png",
+  "/logo/logo12.png",
+  "/logo/logo13.png",
   "/logo/logo1.png",
 ];
 
