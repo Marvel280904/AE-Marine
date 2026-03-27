@@ -104,7 +104,7 @@ export default function WhySection() {
                className="space-y-8"
             >
               <div>
-                <h3 className="text-[#002a3a] text-4xl md:text-5xl font-bold mb-4">Cargoes We Manage</h3>
+                <h3 className="text-[#002a3a] text-4xl md:text-5xl font-bold mb-4">Cargoes We Manage.</h3>
                 <p className="text-gray-500 text-[15px] max-w-lg leading-relaxed">
                   AE Marine handles a diverse portfolio of critical marine energy cargoes with precision and safety.
                 </p>

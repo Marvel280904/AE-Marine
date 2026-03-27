@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { 
-  MapPin, 
-  Phone, 
-  Printer, 
-  Mail, 
-  ArrowRight 
+import {
+  MapPin,
+  Phone,
+  Printer,
+  Mail,
+  ArrowRight
 } from "lucide-react";
 
 export default function Footer() {
@@ -15,7 +15,7 @@ export default function Footer() {
     <footer className="bg-[#111316] text-white pt-20 pb-6">
       <div className="max-w-8xl mx-auto px-8 md:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-20">
-          
+
           {/* Logo & About */}
           <div className="space-y-8">
             <Link href="/" className="inline-block">
@@ -64,11 +64,11 @@ export default function Footer() {
           <div className="lg:border-l lg:border-gray-800 lg:pl-12">
             <h3 className="text-lg font-bold mb-8">Our Services</h3>
             <ul className="space-y-4 text-gray-400 text-[15px]">
-              <li><Link href="#" className="hover:text-white transition-colors">Vessel Chartering</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors">Contract of Affreightment</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors">Market Analysis</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors">Marine Consultancy</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors">S&P Brokerage</Link></li>
+              <li><Link href="/services#services" className="hover:text-white transition-colors">Vessel Chartering</Link></li>
+              <li><Link href="/services#services" className="hover:text-white transition-colors">Contract of Affreightment</Link></li>
+              <li><Link href="/services#services" className="hover:text-white transition-colors">Market Analysis</Link></li>
+              <li><Link href="/services#services" className="hover:text-white transition-colors">Marine Consultancy</Link></li>
+              <li><Link href="/services#services" className="hover:text-white transition-colors">S&P Brokerage</Link></li>
             </ul>
           </div>
 
@@ -90,7 +90,7 @@ export default function Footer() {
               </li>
               <li className="flex gap-4 items-center">
                 <Mail className="w-5 h-5 text-white flex-shrink-0" />
-                <a href="mailto:chartering@aeships.com" className="hover:text-white transition-colors">chartering@aeships.com</a>
+                <a href="mailto:chartering@aeships.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">chartering@aeships.com</a>
               </li>
             </ul>
           </div>
@@ -98,12 +98,12 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-6 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex gap-8 text-gray-400 text-sm">
+        <div className="pt-6 border-t border-gray-800 flex flex-col md:flex-row justify-center items-center gap-6">
+          {/* <div className="flex gap-8 text-gray-400 text-sm">
             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-white transition-colors">Term of Use</Link>
-            {/* <Link href="#" className="hover:text-white transition-colors">Cookie Consent</Link> */}
-          </div>
+            <Link href="#" className="hover:text-white transition-colors">Cookie Consent</Link>
+          </div> */}
           <p className="text-gray-400 text-sm">
             @2026 AEMarine Pte Ltd. All rights Reserved.
           </p>

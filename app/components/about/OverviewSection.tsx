@@ -5,10 +5,10 @@ import { Compass, Globe } from "lucide-react";
 
 export default function OverviewSection() {
   const stats = [
-    { value: "500+", label: "Fixtures" },
-    { value: "12+", label: "Fixtures" },
-    { value: "50+", label: "Fixtures" },
-    { value: "24/7", label: "Fixtures" },
+    { value: "500 +", label: "Fixtures Completed" },
+    { value: "15 +", label: "Trade Routes" },
+    { value: "10M +", label: "Tonnes Shipped" },
+    { value: "24/7", label: "Availability" },
   ];
 
   return (
@@ -26,7 +26,7 @@ export default function OverviewSection() {
             className="flex-1 bg-gradient-to-br from-[#f0f8f9] to-white p-10 md:p-14 rounded-3xl border border-[#007385]/10 shadow-sm relative overflow-hidden flex flex-col justify-center"
           >
             <div className="absolute top-0 left-0 w-2 h-full bg-[#007385]" />
-            <h2 className="text-[#171717] text-4xl md:text-5xl font-bold mb-8">Our Overview</h2>
+            <h2 className="text-[#171717] text-4xl md:text-5xl font-bold mb-8">Our Overview.</h2>
             <div className="space-y-6 text-gray-500 text-[17px] leading-relaxed">
               <p>
                 AE Marine Pte Ltd is an independent shipbroker and consultant in Marine
