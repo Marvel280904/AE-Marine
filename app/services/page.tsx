@@ -157,7 +157,7 @@ export default function ServicesPage() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6, delay: i * 0.07 }}
-                                className="group border-b border-gray-100 py-10 md:py-12 flex flex-col md:flex-row md:items-center gap-6 md:gap-12 cursor-pointer hover:bg-[#f8feff] transition-colors duration-300 px-4 md:px-8 -mx-4 md:-mx-8 rounded-2xl"
+                                className="group border-b border-gray-100 py-10 md:py-12 flex flex-col md:flex-row md:items-center gap-6 md:gap-12 hover:bg-[#f8feff] transition-colors duration-300 px-4 md:px-8 -mx-4 md:-mx-8 rounded-2xl"
                             >
                                 {/* Number */}
                                 <div className="text-[#007385]/20 md:text-6xl text-5xl font-black leading-none font-mono flex-shrink-0 group-hover:text-[#007385]/40 transition-colors duration-300 min-w-[80px]">
