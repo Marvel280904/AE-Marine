@@ -14,8 +14,8 @@ export default function ContactPage() {
   return (
     <main className="flex flex-col bg-white">
       
-      {/* Contact Hero Section */}
-      <section className="relative w-full h-[70vh] flex items-center overflow-hidden bg-[#002a3a]">
+      {/* About Hero Section */}
+      <section className="relative w-full h-[80vh] flex items-end overflow-hidden bg-[#002a3a]">
         {/* Background Image */}
         <motion.div
           initial={{ scale: 1.1 }}
@@ -25,17 +25,22 @@ export default function ContactPage() {
           style={{
             backgroundImage: "url('/images/contact-bg.png')",
             backgroundSize: "cover",
-            backgroundPosition: "50% 70%",
+            backgroundPosition: "40% 70%",
             backgroundRepeat: "no-repeat",
           }}
         />
 
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/30 z-[1]" />
+        <div
+          className="absolute inset-0 z-[1]"
+          style={{
+            background: "linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%)"
+          }}
+        />
 
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 w-full">
-          <div className="max-w-3xl">
+        <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 w-full pb-20">
+          <div className="max-w-3xl text-left">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -44,7 +49,7 @@ export default function ContactPage() {
             >
               Get in Touch.
             </motion.h1>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}

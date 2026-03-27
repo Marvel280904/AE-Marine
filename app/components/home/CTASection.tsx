@@ -17,7 +17,7 @@ export default function CTASection() {
         style={{
           backgroundImage: "url('/images/img-cta.png')",
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "40% 50%",
           backgroundRepeat: "no-repeat",
         }}
       />

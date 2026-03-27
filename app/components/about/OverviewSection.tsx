@@ -5,9 +5,9 @@ import { Compass, Globe } from "lucide-react";
 
 export default function OverviewSection() {
   const stats = [
-    { value: "500 +", label: "Fixtures Completed" },
+    { value: "500 +", label: "Fixtures" },
     { value: "15 +", label: "Trade Routes" },
-    { value: "10M +", label: "Tonnes Shipped" },
+    { value: "10M +", label: "Tons Shipped" },
     { value: "24/7", label: "Availability" },
   ];
 

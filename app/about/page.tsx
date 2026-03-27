@@ -8,7 +8,7 @@ export default function AboutPage() {
   return (
     <main className="flex flex-col">
       {/* About Hero Section */}
-      <section className="relative w-full h-[70vh] flex items-end overflow-hidden bg-[#002a3a]">
+      <section className="relative w-full h-[80vh] flex items-end overflow-hidden bg-[#002a3a]">
         {/* Background Image */}
         <motion.div
           initial={{ scale: 1.1 }}
