@@ -74,7 +74,7 @@ export default function ContactPage() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="bg-white p-8 md:p-11 rounded-2xl shadow-xl border border-gray-100 h-fit"
+              className="bg-white p-8 md:p-10 rounded-2xl shadow-xl border border-gray-100 h-fit"
             >
               <h2 className="text-[#171717] text-4xl font-bold mb-4">Contact Us</h2>
               <p className="text-gray-500 mb-10 leading-relaxed text-[15px]">
@@ -180,33 +180,11 @@ export default function ContactPage() {
                   {/* Fax Card */}
                   <div className="p-6 rounded-xl border border-gray-100 flex items-center gap-4 hover:shadow-md transition-shadow">
                     <div className="w-10 h-10 bg-[#007385] rounded-full flex items-center justify-center flex-shrink-0">
-                      <Printer className="text-white w-5 h-5" />
-                    </div>
-                    <div>
-                      <h3 className="text-[#171717] font-bold text-base mb-1">Fax</h3>
-                      <p className="text-gray-500 text-[14px] font-medium">(65) 6491-5145</p>
-                    </div>
-                  </div>
-
-                  {/* Email Card */}
-                  <div className="md:col-start-1 p-6 rounded-xl border border-gray-100 flex items-center gap-4 hover:shadow-md transition-shadow">
-                    <div className="w-10 h-10 bg-[#007385] rounded-full flex items-center justify-center flex-shrink-0">
                       <Mail className="text-white w-5 h-5" />
                     </div>
                     <div>
                       <h3 className="text-[#171717] font-bold text-base mb-1">Email</h3>
-                      <p className="text-gray-500 text-[13px] font-medium">chartering@aeships.com</p>
-                    </div>
-                  </div>
-
-                  {/* Support Hours Card */}
-                  <div className="p-6 rounded-xl border border-gray-100 flex items-center gap-4 hover:shadow-md transition-shadow">
-                    <div className="w-10 h-10 bg-[#007385] rounded-full flex items-center justify-center flex-shrink-0">
-                      <Clock className="text-white w-5 h-5" />
-                    </div>
-                    <div>
-                      <h3 className="text-[#171717] font-bold text-base mb-1">Support Hours</h3>
-                      <p className="text-gray-500 text-[14px] font-medium">24/7 Available</p>
+                      <p className="text-gray-500 text-[14px] font-medium">chartering@aeships.com</p>
                     </div>
                   </div>
                 </div>
@@ -218,7 +196,7 @@ export default function ContactPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="w-full h-[300px] rounded-2xl overflow-hidden shadow-sm"
+                className="w-full h-[400px] rounded-2xl overflow-hidden shadow-sm"
               >
                 <iframe 
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.760353340673!2d103.89275029999999!3d1.3194919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1818677e43ff%3A0x9053328cc088d24b!2s60%20Paya%20Lebar%20Rd%2C%20Paya%20Lebar%20Square%2C%20Singapore%20409051!5e0!3m2!1sen!2sid!4v1774512819854!5m2!1sen!2sid" 

@@ -48,9 +48,8 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
             className="text-white/80 text-base md:text-lg leading-relaxed max-w-lg"
           >
-            AE Marine provides professional tanker chartering, brokerage, and
-            commercial management services accross Asia Pacific and international
-            markets.
+            Independent shipbrokers and commercial managers specializing in oil 
+            and chemical tankers. Based and headquartered in Singapore since 2012.
           </motion.p>
         </div>
       </div>

@@ -2,57 +2,60 @@
 
 import { motion } from "framer-motion";
 import { 
-  Settings, 
-  ShieldCheck, 
+  Zap, 
   Clock, 
   FileText, 
-  BarChart3,
-  CheckCircle2
+  ShieldCheck, 
+  Settings 
 } from "lucide-react";
-
 const whyChooseUs = [
   {
     id: "1",
-    title: "Experienced Chartering Team",
-    desc: "30+ years of combined experience in chartering, negotiation, and commercial operations."
+    title: "50+ Years Combined Experience",
+    desc: "Deep expertise in chartering, negotiation, and commercial tanker operations."
   },
   {
     id: "2",
-    title: "Global Network.",
-    desc: "Strategic presence in major shipping hubs including Singapore and Dubai."
+    title: "Strategic Market Focus",
+    desc: "Focused on SE Asia, East of Suez, Arabian Gulf and European markets."
   },
   {
     id: "3",
-    title: "Strong Clientele",
-    desc: "Long term relationships with blue chip oil majors and commodity traders."
+    title: "Reputable Clientele",
+    desc: "Trusted service provider for Oil Majors, National Oil Companies (NOCs), and Global Traders."
   },
   {
     id: "4",
-    title: "Low Risk Model",
-    desc: "Disciplined approach to commercial management and risk mitigation."
+    title: "Disciplined Execution",
+    desc: "Professional and compliant shipping solutions that create sustainable value for stakeholders."
   }
 ];
 
 const services = [
   {
-    title: "Spot Charter.",
+    title: "Spot Charter",
     desc: "Efficient single-voyage chartering solutions designed to handle immediate cargo requirements with reliable scheduling and professional operational support.",
-    icon: ShieldCheck
+    icon: Zap
   },
   {
-    title: "Time Charter.",
+    title: "Time Charter",
     desc: "Long-term vessel hire agreements designed to provide dedicated shipping capacity and stable logistics support for continuous and reliable operations.",
     icon: Clock
   },
   {
-    title: "Contract of Affreightment.",
+    title: "Contract of Affreightment",
     desc: "Volume-based shipping contracts designed to ensure consistent cargo movement over time, providing reliable scheduling and efficient logistics support for long-term operations.",
     icon: FileText
   },
   {
-    title: "Commercial Management.",
-    desc: "Full commercial oversight including post-fixture management and voyage accounting, ensuring accurate documentation, financial control, and smooth operational coordination.",
-    icon: BarChart3
+    title: "Marine Consultancy",
+    desc: "Freight market advisory, vessel vetting guidance, and strategic logistics planning tailored for the energy sector.",
+    icon: ShieldCheck
+  },
+  {
+    title: "Commercial Management",
+    desc: "Full commercial oversight including post-fixture management and voyage accounting, ensuring accurate documentation and financial control.",
+    icon: Settings
   }
 ];
 

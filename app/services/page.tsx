@@ -3,71 +3,53 @@
 import { motion } from "framer-motion";
 import WhyOurServices from "../components/services/WhyOurServices";
 import {
-    Anchor,
+    Zap,
+    Clock,
     FileText,
-    BarChart2,
-    Lightbulb,
-    HandshakeIcon,
-    AlertTriangle,
-    Network,
+    ShieldCheck,
+    Settings,
 } from "lucide-react";
 
 const services = [
     {
         number: "01",
-        title: "Vessel Chartering",
-        subtitle: "Spot & Time Charter",
+        title: "Spot Charter",
+        subtitle: "Short-term Fixtures",
         description:
-            "Efficient voyage-based and long-term vessel solutions for your cargo requirements. We provide direct access to global tanker markets for both prompt spot fixtures and strategic time charter arrangements.",
-        icon: <Anchor className="w-7 h-7" />,
+            "Single-voyage tanker fixtures for immediate cargo requirements, sourcing appropriate tonnage at competitive market rates",
+        icon: <Zap className="w-7 h-7" />,
     },
     {
         number: "02",
-        title: "Contract of Affreightment",
-        subtitle: "Volume-Based Shipping",
+        title: "Time Charter",
+        subtitle: "Term-based Hire",
         description:
-            "Volume-based shipping contracts providing cost predictability and guaranteed capacity for large, recurring cargo movements across global trade routes.",
-        icon: <FileText className="w-7 h-7" />,
+            "Structured medium-to-long-term vessel hire arrangements providing freight cost certainty for charterers",
+        icon: <Clock className="w-7 h-7" />,
     },
     {
         number: "03",
-        title: "Market Analysis",
-        subtitle: "Strategic Intelligence",
+        title: "Contract of Affreightment",
+        subtitle: "Volume Agreements",
         description:
-            "Deep-dive market research and freight rate analysis to support informed chartering decisions. We analyze trade flows, vessel supply/demand, and geopolitical factors to keep you ahead.",
-        icon: <BarChart2 className="w-7 h-7" />,
+            "Negotiation and placement of volume-based freight contracts across defined trade routes and periods",
+        icon: <FileText className="w-7 h-7" />,
     },
     {
         number: "04",
         title: "Marine Consultancy",
-        subtitle: "Expert Advisory",
+        subtitle: "Strategic Advisory",
         description:
-            "Expert advisory on market trends, vessel valuations, and regulatory compliance within the maritime sector. Our experienced team delivers actionable insights tailored to your operational needs.",
-        icon: <Lightbulb className="w-7 h-7" />,
+            "Freight market advisory, vessel vetting guidance, and strategic logistics planning for energy sector clients",
+        icon: <ShieldCheck className="w-7 h-7" />,
     },
     {
         number: "05",
-        title: "Sales & Purchase Brokerage",
-        subtitle: "Vessel Transactions",
+        title: "Commercial Management",
+        subtitle: "Fleet Operations",
         description:
-            "Professional facilitation of vessel acquisitions and disposals. We connect buyers and sellers, manage due diligence, and negotiate optimal terms to ensure seamless S&P transactions.",
-        icon: <HandshakeIcon className="w-7 h-7" />,
-    },
-    {
-        number: "06",
-        title: "Claims Management",
-        subtitle: "Risk Mitigation",
-        description:
-            "Comprehensive support in handling maritime disputes, cargo claims, and laytime calculations. We act as your advocate to minimize financial exposure and resolve claims efficiently.",
-        icon: <AlertTriangle className="w-7 h-7" />,
-    },
-    {
-        number: "07",
-        title: "Supply Chain Analysis",
-        subtitle: "Logistics Optimization",
-        description:
-            "End-to-end supply chain evaluation and optimization for energy sector clients. We identify bottlenecks, evaluate alternatives, and deliver solutions that improve efficiency and reduce costs.",
-        icon: <Network className="w-7 h-7" />,
+            "Managing Commercial Operations of Vessels on Behalf of Owners, to obtain best employment for the Fleet",
+        icon: <Settings className="w-7 h-7" />,
     },
 ];
 
@@ -117,9 +99,10 @@ export default function ServicesPage() {
                             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                             className="text-white/90 text-lg md:text-xl leading-relaxed max-w-2xl"
                         >
-                            At AE Marine, we are more than shipbrokers—we act as analysts and consultants for 
-                            your shipping needs. We aim to be a leading Total Logistics Solutions provider for 
-                            the energy sector, delivering shipments safely, securely, and cost-effectively.
+                            AE Marine provides a focused suite of tanker brokerage and advisory services 
+                            to energy sector principals across the Asia Pacific region. Each service 
+                            line is designed to deliver measurable commercial value while maintaining 
+                            the confidentiality and discretion expected of an institutional intermediary.
                         </motion.p>
                     </div>
                 </div>

@@ -27,17 +27,12 @@ export default function OverviewSection() {
           >
             <div className="absolute top-0 left-0 w-2 h-full bg-[#007385]" />
             <h2 className="text-[#171717] text-4xl md:text-5xl font-bold mb-8">Our Overview.</h2>
-            <div className="space-y-6 text-gray-500 text-[17px] leading-relaxed">
+            <div className="space-y-6 text-gray-500 text-lg leading-relaxed">
               <p>
-                AE Marine Pte Ltd is an independent shipbroker and consultant in Marine
-                Transportation for the energy markets. The company is based and headquartered
-                in Singapore and we engage ourselves actively in the Tanker Chartering market.
+                Incorporated in 2012, based and headquartered in Singapore. Operating as Independent Shipbrokers and Commercial Managers focusing on Oil and Chemical Tankers. 
               </p>
               <p>
-                Throughout the years, we have grown steadily in strength to focus on Vessel
-                Chartering. The company has fixed and managed fixtures ranging from small
-                tankers up to large parcel sizes. We cater to serve our customers, moving
-                mainly Crude Oil, Petroleum Products, Chemicals, as well as Palm Products.
+                Strong Reputable Clientele of Oil Majors, National Oil Companies and Oil Traders. Focusing on Regional (South-East Asia) Market and covering East of Suez, Arabian Gulf, and exposure in European Market.
               </p>
             </div>
           </motion.div>
@@ -53,7 +48,7 @@ export default function OverviewSection() {
             />
             <div className="absolute inset-0 bg-[#001f2b]/40 backdrop-blur-[1px] z-[1]" />
             
-            <div className="grid grid-cols-2 gap-6 relative z-10 w-full p-8 md:p-12">
+            {/* <div className="grid grid-cols-2 gap-6 relative z-10 w-full p-8 md:p-12">
               {stats.map((stat, i) => (
                 <motion.div
                   key={i}
@@ -71,12 +66,12 @@ export default function OverviewSection() {
                   </p>
                 </motion.div>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
 
         {/* Bottom: Mission & Vision */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-5 lg:gap-20">
           {/* Mission */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -96,7 +91,7 @@ export default function OverviewSection() {
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#007385]/20 to-transparent" />
               <h3 className="text-[#171717] text-3xl font-bold mb-6 italic">Our Mission</h3>
               <p className="text-gray-500 text-lg leading-relaxed px-4">
-                Deliver excellence in maritime chartering through strategic insights, operational integrity, and a commitment to sustainable growth for our global partners.
+                To deliver excellence in maritime chartering and operations by providing reliable, efficient, and compliant shipping solutions, supported by strong market intelligence, disciplined execution, and long-term partnerships that create sustainable value for our principals and stakeholders.
               </p>
             </div>
           </motion.div>
@@ -120,7 +115,7 @@ export default function OverviewSection() {
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#007385]/20 to-transparent" />
               <h3 className="text-[#171717] text-3xl font-bold mb-6 italic">Our Vision</h3>
               <p className="text-gray-500 text-lg leading-relaxed px-4">
-                To become a trusted global maritime chartering partner, recognized for our agility, deep industry expertise, and unwavering reliability in a dynamic market.
+                To become a trusted global maritime chartering partner, recognized for reliability, market leadership, and operational excellence across Asia-Pacific and international markets, while upholding the highest standards of compliance, integrity, and long-term partnership.
               </p>
             </div>
           </motion.div>

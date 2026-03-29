@@ -12,7 +12,7 @@ const almarai = Almarai({
 
 export const metadata: Metadata = {
   title: "AE Marine | Leading Shipbroker & Marine Consultant in Singapore",
-  description: "AE Marine is a premier independent shipbroker and marine consultant in Singapore, providing end-to-end maritime solutions, tanker chartering, and strategic market analysis for global energy markets.",
+  description: "Incorporated in 2012, AE Marine is a premier independent shipbroker and commercial manager in Singapore with 50+ years of combined experience in tanker chartering and global maritime solutions.",
   keywords: [
     "AE Marine",
     "Shipbroker Singapore",

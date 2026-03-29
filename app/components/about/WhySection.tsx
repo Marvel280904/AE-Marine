@@ -8,33 +8,33 @@ export default function WhySection() {
   const whyItems = [
     {
       icon: <Clock className="w-6 h-6" />,
-      title: "50+ Years Experience.",
-      desc: "Combined team expertise navigating through various market cycles and complexities.",
+      title: "50+ Years Combined Experience.",
+      desc: "Our team brings extensive expertise in navigating complex market cycles and ensuring commercial success.",
     },
     {
       icon: <Settings className="w-6 h-6" />,
       title: "Agile Structure.",
-      desc: "Streamlined decision-making processes allowing us to respond rapidly to market shifts.",
+      desc: "Lean and experienced Commerical team enabling rapid decision-making and operational efficiency.",
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Fast Execution.",
-      desc: "High-speed fixture processing and operational turnaround for maximum efficiency.",
+      title: "Rapid Deal Execution.",
+      desc: "Disciplined execution and structured post-fixture management to reduce transactional risks.",
     },
     {
       icon: <ShieldCheck className="w-6 h-6" />,
       title: "Reliable Performance.",
-      desc: "A proven track record of successful deliveries and long-term partnership stability.",
+      desc: "Serving oil majors, NOCs, and global traders with consistent and reliable commercial performance.",
     },
   ];
 
   const cargoes = [
-    { name: "Dirty Petroleum Products", icon: <Droplets className="w-6 h-6 text-[#007385]" /> },
-    { name: "Crude Oil Tanker", icon: <Ship className="w-6 h-6 text-[#007385]" /> },
     { name: "Clean Petroleum Products", icon: <Droplets className="w-6 h-6 text-[#007385]" /> },
-    { name: "Fuel Oil", icon: <Fuel className="w-6 h-6 text-[#007385]" /> },
-    { name: "Base Oil", icon: <Anchor className="w-6 h-6 text-[#007385]" /> },
+    { name: "Dirty Petroleum Products", icon: <Droplets className="w-6 h-6 text-[#007385]" /> },
+    { name: "Crude Oil", icon: <Ship className="w-6 h-6 text-[#007385]" /> },
+    { name: "Base Oil and Chemicals", icon: <Droplets className="w-6 h-6 text-[#007385]" /> },
     { name: "Palm Oil", icon: <Droplets className="w-6 h-6 text-[#007385]" /> },
+    { name: "Palm Products", icon: <Droplets className="w-6 h-6 text-[#007385]" /> },
   ];
 
   return (
@@ -76,7 +76,7 @@ export default function WhySection() {
           </motion.div>
 
           {/* Right: Images and Cargoes */}
-          <div className="flex-1 space-y-16">
+          <div className="flex-1 space-y-14">
             {/* Top Image */}
             <motion.div 
                initial={{ opacity: 0, scale: 0.9 }}
@@ -105,7 +105,7 @@ export default function WhySection() {
             >
               <div>
                 <h3 className="text-[#002a3a] text-4xl md:text-5xl font-bold mb-4">Cargoes We Manage.</h3>
-                <p className="text-gray-500 text-[15px] max-w-lg leading-relaxed">
+                <p className="text-gray-500 text-lg max-w-lg leading-relaxed">
                   AE Marine handles a diverse portfolio of critical marine energy cargoes with precision and safety.
                 </p>
               </div>

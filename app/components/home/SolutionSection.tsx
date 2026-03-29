@@ -7,13 +7,13 @@ const solutions = [
   {
     title: "Experienced Team",
     description:
-      "Our team brings years of experience in maritime operations, vessel management, and global chartering services to ensure efficient and professional solutions.",
+      "Our team brings 50+ years of combined experience in maritime operations, vessel management, and global chartering services to ensure efficient and professional solutions.",
     icon: Users,
   },
   {
-    title: "Global Partnerships",
+    title: "Global Markets",
     description:
-      "We support international partners and major corporations worldwide, providing dependable logistics services across global shipping routes.",
+      "Focused on the South-East Asia regional market while maintaining strategic coverage across East of Suez, Arabian Gulf, and European shipping markets.",
     icon: Globe,
   },
   {

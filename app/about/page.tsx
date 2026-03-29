@@ -3,6 +3,10 @@
 import { motion } from "framer-motion";
 import OverviewSection from "../components/about/OverviewSection";
 import WhySection from "../components/about/WhySection";
+import StrengthSection from "../components/about/StrengthSection";
+import MilestoneSection from "../components/about/MilestoneSection";
+import FixtureSection from "../components/about/FixtureSection";
+import CreditSection from "../components/about/CreditSection";
 
 export default function AboutPage() {
   return (
@@ -57,9 +61,12 @@ export default function AboutPage() {
       </section>
 
       <OverviewSection />
+      <StrengthSection />
+      <MilestoneSection />
+      <FixtureSection />
+      <CreditSection />
       <WhySection />
-
-      {/* Future sections (Team, History, etc.) */}
+      
     </main>
   );
 }

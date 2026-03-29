@@ -64,11 +64,11 @@ export default function Footer() {
           <div className="lg:border-l lg:border-gray-800 lg:pl-12">
             <h3 className="text-lg font-bold mb-8">Our Services</h3>
             <ul className="space-y-4 text-gray-400 text-[15px]">
-              <li><Link href="/services#services" className="hover:text-white transition-colors">Vessel Chartering</Link></li>
+              <li><Link href="/services#services" className="hover:text-white transition-colors">Spot Charter</Link></li>
+              <li><Link href="/services#services" className="hover:text-white transition-colors">Time Charter</Link></li>
               <li><Link href="/services#services" className="hover:text-white transition-colors">Contract of Affreightment</Link></li>
-              <li><Link href="/services#services" className="hover:text-white transition-colors">Market Analysis</Link></li>
               <li><Link href="/services#services" className="hover:text-white transition-colors">Marine Consultancy</Link></li>
-              <li><Link href="/services#services" className="hover:text-white transition-colors">S&P Brokerage</Link></li>
+              <li><Link href="/services#services" className="hover:text-white transition-colors">Commercial Management</Link></li>
             </ul>
           </div>
 
@@ -83,10 +83,6 @@ export default function Footer() {
               <li className="flex gap-4 items-center">
                 <Phone className="w-5 h-5 text-white flex-shrink-0" />
                 <span>(65) 6100-3321</span>
-              </li>
-              <li className="flex gap-4 items-center">
-                <Printer className="w-5 h-5 text-white flex-shrink-0" />
-                <span>(65) 6491-5145</span>
               </li>
               <li className="flex gap-4 items-center">
                 <Mail className="w-5 h-5 text-white flex-shrink-0" />

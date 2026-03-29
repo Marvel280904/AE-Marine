@@ -41,9 +41,6 @@ export default function CharterersSection() {
           <h2 className="text-[#171717] text-4xl md:text-5xl font-bold mb-4">
             Our Charterers.
           </h2>
-          <p className="text-gray-500 text-base">
-            Specialized solutions for the modern energy shipping industry.
-          </p>
         </motion.div>
       </div>
 

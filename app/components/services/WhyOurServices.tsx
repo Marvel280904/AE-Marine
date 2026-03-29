@@ -2,29 +2,29 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Briefcase, FileText, Zap, Globe } from "lucide-react";
+import { Briefcase, FileText, Zap, ShieldCheck } from "lucide-react";
 
 export default function WhyOurServices() {
   const points = [
     {
-      title: "Reliable.",
-      desc: "Consistency you can bank on for every voyage.",
-      icon: <Briefcase className="w-5 h-5 text-white" />,
+      title: "Confidentiality.",
+      desc: "Maintaining the high level of professional discretion expected of an institutional intermediary.",
+      icon: <ShieldCheck className="w-5 h-5 text-white" />,
     },
     {
-      title: "Experienced.",
-      desc: "Streamlined decision-making processes allowing us to respond rapidly to market.",
+      title: "Market Strength.",
+      desc: "More than 50 years of combined experience within the Asia Pacific energy markets.",
       icon: <FileText className="w-5 h-5 text-white" />,
     },
     {
-      title: "Efficient.",
-      desc: "High-speed fixture processing and operational turnaround for maximum efficiency.",
+      title: "Disciplined Execution.",
+      desc: "Structured post-fixture management to reduce transactional risk for all stakeholders.",
       icon: <Zap className="w-5 h-5 text-white" />,
     },
     {
-      title: "Global Network.",
-      desc: "A proven track record of successful deliveries and long-term partnership stability.",
-      icon: <Globe className="w-5 h-5 text-white" />,
+      title: "Commercial Value.",
+      desc: "Each service line is designed to deliver measurable results and operational efficiency.",
+      icon: <Briefcase className="w-5 h-5 text-white" />,
     },
   ];
 
