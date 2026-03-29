@@ -103,7 +103,7 @@ export default function StrengthSection() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: i * 0.1 }}
                     whileHover={{ scale: 1.02 }}
-                    className="group bg-white p-3 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all flex items-center gap-6"
+                    className="group bg-white p-3 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl flex items-center gap-6"
                   >
                     <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#007385] flex items-center justify-center transition-transform group-hover:rotate-6">
                       {client.icon}
