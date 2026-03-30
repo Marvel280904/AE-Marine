@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const row1 = [
-  "/logo/logo1.png",
-  "/logo/logo2.png",
-  "/logo/logo3.png",
-  "/logo/logo4.png",
-  "/logo/logo5.png",
-  "/logo/logo6.png",
-  "/logo/logo7.png",
-  "/logo/logo8.png",
+  "/logo/logo20.png",
+  "/logo/logo21.png",
+  "/logo/logo22.png",
+  "/logo/logo23.png",
+  "/logo/logo24.png",
+  "/logo/logo25.png",
+  "/logo/logo26.png",
+  "/logo/logo27.png",
   "/logo/logo9.png",
   "/logo/logo10.png",
 ];
@@ -29,7 +29,7 @@ const row2 = [
   "/logo/logo1.png",
 ];
 
-export default function CharterersSection() {
+export default function ShipownerSection() {
   return (
     <section className="bg-white py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-8 md:px-16 mb-12">
@@ -44,7 +44,7 @@ export default function CharterersSection() {
             <Settings className="text-white w-6 h-6" />
           </div> */}
           <h2 className="text-[#171717] text-4xl md:text-5xl font-bold mb-4">
-            Our Charterers.
+            Our Shipowners.
           </h2>
         </motion.div>
       </div>
